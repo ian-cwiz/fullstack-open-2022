@@ -5,11 +5,13 @@ server starts executing js-code
 that appends both the note retrieved
 from the html form and a timestamp
 to the req.body object
+end note
 
 note over browser:
 as form button type is submit
 the page is reloaded and the
 new JSON data is retrieved
+end note
 
 browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
 server-->browser: HTML-code
