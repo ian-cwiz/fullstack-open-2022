@@ -1,7 +1,7 @@
 # fullstack-open-2022
 My submissions for the Full Stack Open 2022 course.
 
-I will be adding onto this repository as different sections are completed. My folder naming scheme is as follows:
+I will be adding onto this repository as different sections are completed. My directory naming scheme is as follows:
 ```
 Part 0
 | Exercise 0.1
