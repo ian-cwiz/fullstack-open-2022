@@ -1,0 +1,14 @@
+note on browser:
+spa.js intercepts the form submission request
+and overrides the default processing of the
+event. it rather assigns the note value to
+the content parameter of a javascript note
+object, along with the current timestamp [Date()]
+and appends it to the JSON string containing
+the existing notes, before calling the redrawNotes()
+function to re-render the notes and send a POST
+request of the new note to the server if
+it is in a ready state
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
