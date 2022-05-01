@@ -2,7 +2,7 @@
 My submissions for the Full Stack Open 2022 course.
 
 I will be adding onto this repository as different sections are completed. My folder naming scheme is as follows:
-
+```
 Part 0
 | Exercise 0.1
   submission.txt
@@ -18,3 +18,4 @@ Part 0
 Part 1
   | Exercise 1.1
     etcetera.txt
+```
