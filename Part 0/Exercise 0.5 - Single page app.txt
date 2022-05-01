@@ -1,0 +1,29 @@
+browser->server: GET https://studies.cs.helsinki.fi/exampleapp/spa
+
+note over server:
+server is listening for request with nodejs
+and handles request by having express serve
+the html page by generating it from the content
+provided to the server-sided template engine which
+interfaces with express
+end note
+
+server-->browser: HTML-code
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+server-->browser: spa.js
+
+note over browser:
+browser starts executing js-code that checks if the browser's HTML
+get request was successful and is done loading, then calling the
+redrawNotes function and retrieving the data as JSON asynchronously
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: [{ content: "HTML is easy", date: "2019-05-23" }, ...]
+
+note over browser:
+browser executes the redrawNotes function
+which renders notes to display
+end note
